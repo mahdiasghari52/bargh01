@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نمایشگر کلیپ - تله تولید بیشتر</title>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- B Nazanin Font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=BNazanin&display=swap" rel="stylesheet">
+    <style>
+        /* Reset & Base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'BNazanin', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0a0e1a 0%, #1a1f2f 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem 1rem;
+        }
+
+        /* Card Container */
+        .video-card {
+            max-width: 1000px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-radius: 42px;
+            box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.8), 0 10px 20px -6px rgba(0, 0, 0, 0.3);
+            padding: 2rem 2rem 2.5rem;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* Header Section */
+        .video-header {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 1.8rem;
+            gap: 1rem;
+        }
+
+        .title-section {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .video-icon {
+            background: linear-gradient(145deg, #e74c3c, #c0392b);
+            color: white;
+            width: 58px;
+            height: 58px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            box-shadow: 0 10px 18px -8px rgba(231, 76, 60, 0.4);
+            transition: 0.25s;
+        }
+
+        .title-text {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: #ffffff;
+            letter-spacing: -0.4px;
+            line-height: 1.2;
+            font-family: 'BNazanin', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .title-text small {
+            display: block;
+            font-size: 0.85rem;
+            font-weight: 400;
+            color: #aab4c9;
+            opacity: 0.85;
+            margin-top: 4px;
+            letter-spacing: 0.2px;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 11px 24px;
+            border-radius: 60px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            background: rgba(255, 255, 255, 0.1);
+            color: #ffffff;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: all 0.25s ease;
+            cursor: pointer;
+            text-decoration: none;
+            backdrop-filter: blur(4px);
+            font-family: 'BNazanin', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .btn-primary {
+            background: linear-gradient(145deg, #e74c3c, #c0392b);
+            color: white;
+            border: none;
+            box-shadow: 0 10px 20px -10px rgba(231, 76, 60, 0.5);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 16px 28px -12px rgba(231, 76, 60, 0.7);
+        }
+
+        .btn-outline:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: transla<i class="fas fa-video"></i>
+                </div>
+                <div class="title-text">
+                    تله تولید بیشتر
+                    <small>کلیپ · ویدئو تحلیلی</small>
+                </div>
+            </div>
+            <div class="action-buttons">
+                <a href="تله تولید بیشتر.mp4" class="btn btn-primary" download="تله تولید بیشتر.mp4">
+                    <i class="fas fa-download"></i> دانلود
+                </a>
+                <a href="تله تولید بیشتر.mp4" class="btn btn-outline" target="_blank">
+                    <i class="fas fa-external-link-alt"></i> مشاهده
+                </a>
+            </div>
+        </div>
+
+        <!-- Video Player -->
+        <div class="video-player">
+            <video controls preload="metadata">
+                <source src="تله تولید بیشتر.mp4" type="video/mp4">
+                <!-- در صورت عدم پشتیبانی مرورگر -->
+                مرورگر شما از نمایش ویدئو پشتیبانی نمی‌کند.
+            </video>
+        </div>
+
+        <!-- Footer / Meta -->
+        <div class="video-footer">
+            <div class="file-info">
+                <span><i class="far fa-file-video"></i> ۲۴ مگابایت</span>
+                <span><i class="far fa-calendar-alt"></i> ۱۴۰۵/۰۵/۲۳</span>
+                <span><i class="fas fa-play"></i> پخش آنلاین</span>
+            </div>
+            <div class="status-badge">
+                <i class="fas fa-circle" style="font-size: 0.5rem;"></i> آماده پخش
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
